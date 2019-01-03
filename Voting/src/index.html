@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>投票DAPP</title>
+  <link href='css/bootstrap.min.css' rel='stylesheet' type='text/css'>
+  <link href='css/app.css' rel='stylesheet' type='text/css'>
+</head>
+
+<body class="container">
+  <h2>投票DAPP</h2>
+  <div id="address"></div>
+  <div class="table-responsive">
+    <table class="table table-bordered">
+      <thead>
+        <tr>
+          <th>候选人</th>
+          <th>得票数</th>
+        </tr>
+      </thead>
+      <tbody>
+        <tr>
+          <td>1</td>
+          <td id="candidate-1"></td>
+        </tr>
+        <tr>
+          <td>2</td>
+          <td id="candidate-2"></td>
+        </tr>
+      </tbody>
+    </table>
+    <div id="msg"></div>
+  </div>
+  <label>候选人编号</label>
+  <input type="text" id="candidate" />
+  <br>
+  <label>投票价格</label>
+  <input type="text" id="value" />
+
+  <button id ="vote" class="btn btn-primary">投票</button>
+</body>
+
+<script src="js/jquery.min.js"></script>
+<script src="js/web3.min.js"></script>
+<script src="js/truffle-contract.js"></script>
+
+<script src="js/app.js"></script>
+</html>
